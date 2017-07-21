@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'fonts.scss';
+@import 'content.scss';
+
+figure {
+  text-align: center;
+  background-color: #ddd;
+  position: relative;
+  padding: 0 0 45% 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+    &.sticky {
+      position: fixed;
+      left: 20px;
+      top: 10px;
+      width: 240px;
+      height: 180px;
+    }
+  }
+}
